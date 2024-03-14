@@ -42,7 +42,7 @@ input{
     border-radius: 2px;
 }
 
-input[type="text"], option{color: #000;}
+input[type="text"],[type="email"], option{color: #000;}
 
 select{
     width: 100%;
