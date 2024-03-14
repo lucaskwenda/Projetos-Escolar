@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+body{
+    background-color: black;
+}
+.conteiner{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.conteiner h1{
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    background-color: #2FAFD0;
+}
+.banner{
+    background-image: url('../imagens/people.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+.banner div{
+    max-width: 270px;
+    background-color: #ffffffb2;
+    float: right;
+    margin: 15px;
+    padding: 15px;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    padding: 9px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+input[type="text"], option{color: #000;}
+
+select{
+    width: 100%;
+    padding: 9px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../imagens/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px)center;
+    color: #000;
+}
+input[ type="submit"]{
+    background-color: #2FAFD0;
+    cursor: pointer;
+}
+.section{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2FAFD0;
+    padding: 30px; 
+}
+
+#segunda{
+  padding-left: 30px;
+  font-size: 13px;
+}
+#segunda h4{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+footer{
+  margin-top: 30px;
+  padding: 30px;
+}
+
+footer .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.img a {margin-left: 15px;}
+.img a img{width: 40px;}
+
+h5{
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 500px){
+    .conteiner h1{
+        font-size: 20px;
+    }
+
+    .banner div{
+        max-width: 250px;
+        float: left;
+    }
+    .banner div h3{font-size: 18px;}
+
+    .section{
+        flex-direction: column;
+        padding: 10px; 
+    }
+    .img a {margin-left: 10px;}
+    .img a img{width: 40px;}
+}
